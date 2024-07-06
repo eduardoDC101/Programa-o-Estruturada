@@ -2,7 +2,6 @@
 #include <locale>
 #include <fstream>
 using namespace std;
-
 struct SistemaCadastro
 {
     string nomepet;
@@ -14,19 +13,14 @@ struct SistemaCadastro
     long int rg;
     long long int telefone;
 };
-
-
 int main()
 {
     setlocale(LC_ALL,"Portuguese");
     system("CLS");
-
     int numerofichas;
     cout<<"Digite quantas fichas iram ser feitas: ";
     cin>>numerofichas;
-
    SistemaCadastro Fichas[numerofichas];
-
    for(int i = 0;i<numerofichas;i++)
    {
     cout<<"INFORME O NOME DO PET: ";
@@ -47,7 +41,6 @@ int main()
     cin>>Fichas[i].telefone;
    }
    cout<<"\n\nClientes Cadastrados como sucesso!!!\n\n";
-
    ofstream Arquivo;
    for(int i = 0;i<numerofichas;i++)
    {
@@ -65,7 +58,6 @@ int main()
     }
     Arquivo.close();
    }
-
     system("PAUSE");
     return 0;
 }
