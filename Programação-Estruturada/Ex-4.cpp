@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-
 using namespace std;
-
 int main()
 {
   int time;
@@ -11,7 +9,6 @@ int main()
    cout << "Digite - 3 - para Palmeiras" << endl;
    cout << "Digite - 4 - para Corinthians" << endl;
    cin >> time;
-
     switch (time)
     {
     case 1:
@@ -29,6 +26,5 @@ int main()
         default:
            cout << "Opcao invalida";
     }
-
  return 0;
 }
