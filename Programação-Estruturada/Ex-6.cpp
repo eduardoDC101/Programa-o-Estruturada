@@ -1,15 +1,10 @@
 #include <iostream>
 #include <cstdlib>
-
 using namespace std;
-
-
 int main(int argc, char** argv)
 {
    int i,soma,par;
-
    soma = 0;
-
    for (i = 100; i <= 200; i+= 2)
    {
     cout << i << endl;
